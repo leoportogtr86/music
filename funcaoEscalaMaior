@@ -1,0 +1,100 @@
+
+package musica;
+
+import org.jfugue.player.*;
+
+public class Musica {
+
+    
+    public static void main(String[] args) {
+        
+       escalaMaior ("C"); 
+       escalaMaior ("G"); 
+       escalaMaior ("D"); 
+       escalaMaior ("A"); 
+       escalaMaior ("E"); 
+       escalaMaior ("B"); 
+        
+    }
+    
+    public static void escalaMaior (String nota){
+    
+       if (nota.equalsIgnoreCase("C")){
+       
+           System.out.println("C D E F G A B C");
+           Player player = new Player ();
+           player.play("C D E F G A B C6");
+       
+       } else if (nota.equalsIgnoreCase("C#")){
+       
+           System.out.println("C# D# E# F# G# A# B# C#");
+           Player player = new Player ();
+           player.play("C# D# E# F# G# A# B# C#6");
+       
+       } else if (nota.equalsIgnoreCase("D")){
+       
+           System.out.println("D E F# G A B C# D");
+           Player player = new Player ();
+           player.play("D E F# G A B C#6 D6");
+       
+       } else if (nota.equalsIgnoreCase("D#")){
+       
+           System.out.println("D# E# F## G# A# B# C## D#");
+           Player player = new Player ();
+           player.play("D# E# F## G# A# B# C##6 D#6");
+       
+       } else if (nota.equalsIgnoreCase("E")){
+       
+           System.out.println("E F# G# A B C# D# E");
+           Player player = new Player ();
+           player.play("E F# G# A B C#6 D#6 E6");
+       
+       } else if (nota.equalsIgnoreCase("F")){
+       
+           System.out.println("F G A Bb C D E F");
+           Player player = new Player ();
+           player.play("F G A Bb C6 D6 E6 F6");
+       
+       } else if (nota.equalsIgnoreCase("F#")){
+       
+           System.out.println("F# G# A# B C# D# E# F#");
+           Player player = new Player ();
+           player.play("F# G# A# B C#6 D#6 E#6 F#6");
+       
+       } else if (nota.equalsIgnoreCase("G")){
+       
+           System.out.println("G A B C D E F# G");
+           Player player = new Player ();
+           player.play("G A B C6 D6 E6 F#6 G6");
+       
+       } else if (nota.equalsIgnoreCase("G#")){
+       
+           System.out.println("G# A# B# C# D# E# F## G#");
+           Player player = new Player ();
+           player.play("G# A# B# C#6 D#6 E#6 F##6 G#6");
+       
+       } else if (nota.equalsIgnoreCase("A")){
+       
+           System.out.println("A B C# D E F# G# A");
+           Player player = new Player ();
+           player.play("A B C#6 D6 E6 F#6 G#6 A6");
+       
+       } else if (nota.equalsIgnoreCase("A#")){
+       
+           System.out.println("A# B# C## D# E# F## G## A#");
+           Player player = new Player ();
+           player.play("A# B# C##6 D#6 E#6 F##6 G##6 A#6");
+       
+       } else if (nota.equalsIgnoreCase("B")){
+       
+           System.out.println("B C# D# E F# G# A# B");
+           Player player = new Player ();
+           player.play("B C#6 D#6 E6 F#6 G#6 A#6 B6");
+       
+       }
+    
+    
+    
+    }
+    
+}
