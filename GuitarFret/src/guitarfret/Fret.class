@@ -1,0 +1,64 @@
+
+package guitarfret;
+import org.jfugue.player.*;
+
+
+public class Fret {
+    
+    int corda, casa;
+
+    
+    
+    
+    
+    
+    
+    public void tocar (int corda, int casa){
+    
+       String nota = "R";
+        
+       Player player = new Player ();
+       
+       if (corda == 1 && casa == 0){
+       
+          nota = "E";
+       
+       } else if (corda == 1 && casa == 1){
+       
+          nota = "F";
+       
+       } else if (corda == 1 && casa == 2){
+       
+          nota = "F#";
+       
+       } else if (corda == 1 && casa == 3){
+       
+          nota = "G";
+       
+       } else if (corda == 1 && casa == 4){
+       
+          nota = "G#";
+       
+       } else if (corda == 1 && casa == 5){
+       
+          nota = "A";
+       
+       } else if (corda == 1 && casa == 6){
+       
+          nota = "A#";
+       
+       }
+       
+       
+       
+       
+       
+       
+       
+       player.play(nota);
+    
+    }
+    
+    
+    
+}
